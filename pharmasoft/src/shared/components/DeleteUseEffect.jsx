@@ -28,8 +28,8 @@ function DeleteUseEffect(){
     useEffect(() => {
         setMessage(`El contador ha cambiado a ${count}`);
     },[count]);
-  
-   return (
+
+    return (
         <>
             <h2>{count}</h2>
             <p>{message}</p>

@@ -32,8 +32,8 @@ const Navbar = ({variant = "solid"}) => {
               </Link>
             </li>
             <li>
-              <Link to="/cursos" className="hover:text-primary transition">
-                Cursos
+              <Link to="/usuario" className="hover:text-primary transition">
+                Usuario
               </Link>
             </li>
             <li>
@@ -42,8 +42,8 @@ const Navbar = ({variant = "solid"}) => {
               </Link>
             </li>
             <li>
-              <Link to="/videos" className="hover:text-primary transition">
-                videos
+              <Link to="/listar" className="hover:text-primary transition">
+                Listar
               </Link>
             </li>
           </ul>
@@ -60,7 +60,7 @@ const Navbar = ({variant = "solid"}) => {
                 type="text"
                 placeholder="Buscar..."
                 className="pl-9 pr-4
-                 py-2.5 border rounded-lg text-body focus:outline-none focus:ring-2 focus:ring-primary"
+                py-2.5 border rounded-lg text-body focus:outline-none focus:ring-2 focus:ring-primary"
               />
             </div>
 
@@ -114,8 +114,6 @@ const Navbar = ({variant = "solid"}) => {
                 </div>
               )}
             </div>
-
-
           </div>
         </div>
       </div>

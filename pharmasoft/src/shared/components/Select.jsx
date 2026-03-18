@@ -1,6 +1,9 @@
 export default function Select({
     label,
     name,
+    value,
+    error,
+    onChange,
     options = [],
     }
 ){
@@ -10,13 +13,20 @@ export default function Select({
             {/* Si label tiene contenido es igual a thurthy Si no es falsy y no muestra el label */}
             { label && (
 
-            <label className="text-caption mb-1 text-text-muted">
+            <label className="
+            text-[8px]
+            mb-1
+            text-text-primary
+            "
+            >
                 {label}
             </label>
 
             )}
 
             <select
+            value={value}
+            onChange={onChange}
             name={name}
             className="
                 w-full
@@ -24,7 +34,7 @@ export default function Select({
                 rounded-md
                 border
                 border-border
-                px-4           
+                px-4         
             "
             >
             <option value="">Seleccione un tipo de documento</option>
@@ -37,6 +47,7 @@ export default function Select({
         };
             
             </select>
+            {error && <p className="text-info-medium text-red-600 mt-1">{error}</p>}
         </div>
     );
 };
